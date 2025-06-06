@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1373796992798659658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6027095723707010575}
+  - component: {fileID: 2376675498879321175}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6027095723707010575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373796992798659658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2376675498879321175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373796992798659658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376117f4661826e4bb18ef5b331ca2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputData: {fileID: 11400000, guid: 6e076b9512046164795a0ba31974e236, type: 2}
+  gridWidth: 10
+  gridHeight: 10
+  GridOffsetDebug: {x: 0, y: 0, z: 0}
+  generateOnStart: 1
+  cellPrefabs:
+  - {fileID: 3239680425404099577, guid: c6c34bed8b12bcf4487c82f6b1627e4d, type: 3}
+  cellContainer: {fileID: 0}
+  spacingMode: 1
+  manualSpacing: {x: 0.4, y: 0.4}
+  useChessPattern: 1
+  defaultCellType: 8
+  WaterMaterials:
+  - cellType: 2
+    cellMaterial: {fileID: 2100000, guid: c27d6c3a7145a7d40bb1166d8f4eec19, type: 2}
+  - cellType: 2
+    cellMaterial: {fileID: 2100000, guid: 146e5e46f60432741b370b81cc29500a, type: 2}
+  LandMaterials:
+  - cellType: 6
+    cellMaterial: {fileID: 2100000, guid: 6e33e2db03b8cd54e958e0c444b63acb, type: 2}
+  - cellType: 6
+    cellMaterial: {fileID: 2100000, guid: e9c1d22464c046344bd1095f61447d6e, type: 2}
+  ForestMaterials:
+  - cellType: 5
+    cellMaterial: {fileID: 2100000, guid: b73f3e7eef7ffac4da99c13e92bccf04, type: 2}
+  - cellType: 5
+    cellMaterial: {fileID: 2100000, guid: 8995793906e6fcd42a09402e93f38419, type: 2}
+  LavaMaterials:
+  - cellType: 0
+    cellMaterial: {fileID: 2100000, guid: 2eb82842e0f88d941bf6a240c513ec6c, type: 2}
+  - cellType: 0
+    cellMaterial: {fileID: 2100000, guid: 3c3f61a459bc86f47921311d961c242f, type: 2}
