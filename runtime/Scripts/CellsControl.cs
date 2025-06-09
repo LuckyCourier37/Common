@@ -46,7 +46,7 @@ public class CellsControl : Controller
     Vector2 currentSpacing;
     Vector2 stepDistance;
     Vector3 gridOffset;
-    private WallsControl wallsControl;
+    
 
     // --- Структуры для типов и материалов ---
     [System.Serializable]
@@ -79,7 +79,7 @@ public class CellsControl : Controller
     
     public override void Init()
     {
-        wallsControl = Main.Instance.GetController<WallsControl>();
+        
 
         InitCells();
         CreateCells();
